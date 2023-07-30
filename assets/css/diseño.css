@@ -1,0 +1,188 @@
+
+html {
+    background-color: whitesmoke;
+}
+
+/* header */
+header {
+    grid-area: header;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+}
+.logo {
+    grid-area: logo;
+}
+.youtube-B {
+    height: 30px;
+    width: 120px;
+    background-image: url(../img/youtube.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-color: white;
+}
+.subir {
+    grid-area: up;
+    background-color: black;
+}
+.pfpU {
+    grid-area: pfpU;
+    background-color: whitesmoke;
+}
+.lineas {
+    grid-area: lineas;
+    background-color: black;
+}
+.barra_de_busqueda {
+    grid-area: busqueda;
+}
+.barra {
+    height: 25px;
+    width: 450px;
+}
+.buscar {
+    height: 31px;
+    width: 38px;
+}
+
+
+.container_header {
+    display: grid;
+    grid-template-columns: 5px 30px 10px 120px auto 500px auto 30px 10px 30px 40px;
+    grid-template-rows: 20px 30px 20px;
+    grid-template-areas: 
+     ". . . . . . . . . . ."
+     ". lineas. logo . busqueda . up . pfpU ."
+     ". . . . . . . . . . .";
+}
+.container_header img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* menu */
+menu {
+    grid-area: menu;
+    background-color: white;
+}
+
+.portada {
+    grid-area: img;
+    background-color: whitesmoke;
+}
+
+.pfp {
+    grid-area: img2;
+}
+.pfp img {
+    border-radius:160px;
+}
+
+.titulo {
+    grid-area: titulo;
+}
+.user {
+    grid-area: user;
+}
+.dia {
+    grid-area: dia;
+}
+.texto {
+    color: rgb(114, 114, 114);
+}
+
+.cajas {
+    margin: 10px;
+    width: 300px;
+    height: 305px;
+    display: inline-block;
+    
+}
+.container_menu {
+    display: grid;
+    grid-template-columns: 40px auto;
+    grid-template-rows: 200px 40px 20px 20px;
+    gap: 5px;
+    grid-template-areas: 
+     "img img "
+     "img2 titulo"
+     ". user"
+     ". dia";
+}
+.container_menu img {
+    width: 100%;
+    height: 100%;
+}
+/* main */
+main {
+    grid-area: main;
+}
+.text1 {
+    grid-area: text1;
+}
+.text2 {
+    grid-area: text2;
+}
+.hr {
+    grid-area: hr;
+}
+.hr1 {
+    grid-area: hr1;
+}
+.home {
+    grid-area: home;
+}
+.trendig {
+    grid-area: trend;
+}
+.subscriptions {
+    grid-area: subs;
+}
+.history {
+    grid-area: history;
+}
+.watch-later {
+    grid-area: later;
+}
+.likes {
+    grid-area: likes;
+}
+.caja_main {
+    height: 556px;
+    width: 200px;
+}
+.container_main {
+    display: grid;
+    grid-template-columns: 10px auto 10px;
+    grid-template-rows: 16px 40px 40px 40px 30px 40px 40px 40px 40px 30px 40px;
+    grid-template-areas:
+     ". . ."
+     ". home ."
+     ". trend ."
+     ". subs ."
+     "hr hr hr"
+     ". text1 ."
+     ". history ."
+     ". later ."
+     ". likes ."
+     "hr1 hr1 hr1"
+     ". text2 .";
+    
+}
+/* Footer */
+footer {
+    grid-area: footer;
+    line-height: 1em;
+    
+}
+/*  */
+.grid-container {
+    display: grid;
+    grid-template-rows: 70px auto 100px;
+    grid-template-areas:
+        "header header header header"
+        "main menu menu menu "
+        "footer footer footer footer";
+    gap: 10px;
+}
